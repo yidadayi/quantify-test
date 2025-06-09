@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: url('https://cdn.pixabay.com/photo/2017/01/06/19/15/wood-1958729_1280.jpg') center center/cover no-repeat #fffbe7;
+    min-height: 100vh;
+}
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#logo-screen h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+button {
+    padding: 0.7em 2em;
+    margin: 1em;
+    font-size: 1.2em;
+    border-radius: 1.5em;
+    border: none;
+    background: #ffd966;
+    color: #7a4f00;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #ffe599;
+}
+#toy-list {
+    display: flex;
+    gap: 1em;
+}
+.toy-btn {
+    font-size: 2em;
+    padding: 0.5em 1em;
+}
+#score-timer {
+    position: absolute;
+    left: 2vw;
+    bottom: 2vw;
+    background: rgba(30, 136, 229, 0.85);
+    color: #fff;
+    border-radius: 1.5em;
+    padding: 0.7em 1.5em;
+    font-size: 1.2em;
+    box-shadow: 0 2px 8px rgba(30,136,229,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+#game-canvas {
+    background: transparent;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #b2ebf2;
+    width: 90vw;
+    max-width: 400px;
+    height: 90vw;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+}
+#restart-btn {
+    margin-top: 2em;
+} 

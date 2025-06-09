@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppy Cat 网页版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="logo-screen" class="screen">
+        <h1>🐾 Peppy Cat</h1>
+        <button id="start-btn">开始游戏</button>
+    </div>
+    <div id="toy-select-screen" class="screen" style="display:none;">
+        <h2>选择玩具</h2>
+        <div id="toy-list">
+            <button class="toy-btn" data-toy="fish">🐟</button>
+            <button class="toy-btn" data-toy="ball">⚽</button>
+            <button class="toy-btn" data-toy="mouse">🐭</button>
+        </div>
+    </div>
+    <div id="game-screen" class="screen" style="display:none;">
+        <div id="score-timer">
+            <span id="score">分数: 0</span>
+            <span id="timer">时间: 30</span>
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <button id="restart-btn" style="display:none;">再玩一次</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html> 
